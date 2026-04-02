@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+body,html{
+  height: 100%;
+}
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  flex: 1;
+}
+
+/* MAIN CONTAINER */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  margin-top: 4%;
+}
+
+/* SHELTER CARD */
+.shelter-card {
+  background: #1e293b;
+  padding: 35px;
+  width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.shelter-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #38bdf8;
+  font-size: 32px;
+}
+
+/* FORM ELEMENTS */
+.shelter-card label {
+  display: block;
+  margin: 14px 0 6px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.shelter-card input,
+.shelter-card textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #e2e8f0;
+  outline: none;
+}
+
+.shelter-card textarea {
+  height: 90px;
+  resize: none;
+}
+
+.shelter-card input:focus,
+.shelter-card textarea:focus {
+  border-color: #38bdf8;
+}
+
+/* BUTTON */
+.shelter-card button {
+  margin-top: 22px;
+  padding: 12px;
+  width: 100%;
+  background: #334155;
+  color: #e2e8f0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.shelter-card button:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .shelter-card {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .shelter-card h2 {
+    font-size: 26px;
+  }
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .shelter-card {
+    width: 80%;
+  }
+}

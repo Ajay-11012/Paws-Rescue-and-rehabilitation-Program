@@ -1,0 +1,224 @@
+/* ===== BASE ===== */
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== HERO IMAGE ===== */
+.back-img {
+    height: 43vh;
+    background: url(./WhatsApp\ Image\ 2025-12-31\ at\ 2.12.43\ PM\ \(1\).jpeg) center/cover no-repeat;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.main-box {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ===== CONTENT BOX ===== */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 5%;
+    border: transparent;
+    background-color:#334155    ;
+    margin: 0px 5% 2% 5%;
+    border-radius: 25px;
+}
+
+/* ===== IMAGE ===== */
+.pic img {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+/* Fixed image height only on large screens */
+#shelter,
+#Adoptions {
+    max-height: 60vh;
+}
+.animal-shelter-img{
+    max-height: 380px;
+}
+/* ===== TEXT CONTENT ===== */
+.content {
+    max-width: 650px;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #38bdf8;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 1.6rem;
+    margin-top: 25px;
+    color: #cbd5e1;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+/* ===== BUTTON ===== */
+#box-btn {
+    margin-top: 25px;
+    background-color: #334155;
+    border: none;
+    padding: 10px 26px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#box-btn a {
+    text-decoration: none;
+    color: #e2e8f0;
+    font-size: 15px;
+}
+
+#box-btn:hover {
+    background-color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+/* ===== SEPARATOR ===== */
+.separator {
+    display: none;
+}
+
+/* ===== Home section/card overrides (admin) ===== */
+.section.card {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: #22313f; /* slightly darker to match admin */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.section {
+    padding: 40px 4%;
+    gap: 30px;
+}
+
+.section img {
+    width: 45%;
+    border-radius: 16px;
+}
+
+.section .info {
+    width: 50%;
+}
+
+/* Buttons inside cards */
+.section .info button {
+    padding: 12px 28px;
+    border-radius: 24px;
+    background: #38bdf8;
+    color: #062028;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .main-box { gap: 24px; }
+    .section { flex-direction: column; padding: 24px 6%; }
+    .section img, .section .info { width: 100%; }
+    .section.card { padding: 20px; }
+}
+
+/* ================================================= */
+/* ================= MOBILE ======================== */
+/* ================================================= */
+@media (max-width: 600px) {
+
+    .back-img {
+        height: 30vh;
+    }
+
+    .box {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .pic img {
+        border-radius: 20px;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .content h3 {
+        font-size: 1.3rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    #shelter,
+    #Adoptions {
+        max-height: none;
+    }
+
+    .separator {
+        display: block;
+        font-size: 2rem;
+        margin: 30px 0;
+    }
+}
+
+/* ================================================= */
+/* ================= TABLET ======================== */
+/* ================================================= */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .box {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 40px;
+    }
+
+    .pic img {
+        max-width: 85%;
+    }
+
+    .content h2 {
+        font-size: 2.5rem;
+    }
+
+    .content h3 {
+        font-size: 1.4rem;
+    }
+
+    .content p {
+        font-size: 1.1rem;
+    }
+
+    #shelter,
+    #Adoptions {
+        max-height: none;
+    }
+}

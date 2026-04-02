@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paws Rescue & Rehabilitation Program/Rescue Status</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Rescue-status-admin.css">
+    <link rel="stylesheet" href="./nav-bar.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+</head>
+<body>
+<!-- ===== HEADER / NAVBAR ===== -->
+<header>
+  <!-- Hamburger (left) -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Logo + Title -->
+  <div class="brand">
+    <img src="./logo.png" alt="logo">
+    <h1>Paws Rescue & Rehabilitation Program</h1>
+  </div>
+
+  <!-- Desktop Menu -->
+  <nav class="nav-links">
+    <a href="./index-admin.html" class="active"><i class="fa-solid fa-house"></i>Home</a>
+    <a href="./aboutus-admin.html"><i class="fa-solid fa-circle-info"></i>About Us</a>
+    <a href="./contact-admin.html"><i class="fa-solid fa-envelope"></i>Contact</a>
+    <a href="./notification-admin.html" class="notification-icon">
+    <i class="fa-solid fa-bell"></i>
+    <span class="notif-dot"></span>
+    </a>
+    <a href="./profile-admin.html"><img src="./user-profile-img.png" alt="" width="10%"></a>
+  </nav>
+<!-- Mobile Slide Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-header">
+    <div class="brand">
+      <img src="./logo.png" alt="logo">
+      <h1></h1>
+    </div>
+    <div class="close-btn" id="closeBtn">&times;</div>
+  </div>
+
+  <div class="mobile-links">
+    <a href="./index-admin.html" class="active"><i class="fa-solid fa-house"></i>Home</a>
+    <a href="./aboutus-admin.html"><i class="fa-solid fa-circle-info"></i>About Us</a>
+    <a href="./contact-admin.html"><i class="fa-solid fa-envelope"></i>Contact</a>
+    <a href="./notification-admin.html" class="notification-icon">
+    <i class="fa-solid fa-bell"></i>
+    <span class="notif-dot">notifications</span>
+    </a>
+    <a href="./profile-admin.html" style="display: flex;"><img src="./user-profile-img.png" alt="" width="10%" >ajay.example@gmail.com</a>
+  </div>
+</div>
+
+<div class="overlay" id="overlay"></div>
+</header>
+<!-- HERO IMAGE + CONTENT -->
+<div class="content-img">
+    <div class="pic">
+        <img src="./WhatsApp Image 2026-01-07 at 3.38.19 PM.jpeg" alt="Rescue Dashboard">
+    </div>
+
+    <div class="content">
+        <h2>Rescue Chart</h2>
+        <p>
+            The chart displays the count of rescued animals currently in shelters
+            and those pending rescue for different species.
+        </p>
+        <h4>
+            This dashboard shows the total rescued animals under Project Paws.
+            Green bars represent animals safely sheltered, while orange bars show
+            animals pending rescue or treatment. This helps NGOs and admins track,
+            plan, and respond faster to emergencies.
+        </h4>
+    </div>
+</div>
+
+<h2 class="page-title">Rescue Status</h2>
+
+<!-- TABLE -->
+<div class="table-container">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Animal</th>
+            <th>Location</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Dog</td>
+            <td>Hyderabad</td>
+            <td class="progress">In Progress</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Cat</td>
+            <td>Bangalore</td>
+            <td class="shelter">In Shelter</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Cow</td>
+            <td>Khammam</td>
+            <td class="pending">Pending</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>Crocodile</td>
+            <td>Visakhapatnam</td>
+            <td class="pending">Pending</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>Monkey</td>
+            <td>Tirupati</td>
+            <td class="shelter">In Shelter</td>
+        </tr>
+        <tr>
+            <td>06</td>
+            <td>Tiger</td>
+            <td>Hyderabad</td>
+            <td class="shelter">In Shelter</td>
+        </tr>
+    </table>
+</div>
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-info">
+      <p>© 2026 My Project. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./navbar.js"></script>
+</body>
+</html>
