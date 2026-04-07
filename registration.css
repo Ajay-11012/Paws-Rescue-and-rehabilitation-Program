@@ -128,11 +128,11 @@ main {
   text-align: center;
   margin-top: 25px;
   font-size: 0.95em;
-  color: #000000;
+  color: #94a3b8;
 }
 
 .login-text a {
-  color: #0f62ce;
+  color: #38bdf8;
   text-decoration: none;
   font-weight: 500;
 }
@@ -140,6 +140,7 @@ main {
 .login-text a:hover {
   text-decoration: underline;
 }
+/* jh */
 
 /* ===============================
    ANIMATION

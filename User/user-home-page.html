@@ -41,7 +41,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     <i class="fa-solid fa-bell"></i>
     <span class="notif-dot"></span>
     </a>
-    <a href="./profile.html"><img src="./user-profile-img.png" alt="" width="10%"></a>
+    <a href="./profile.html"><img src="https://i.postimg.cc/hjWXK1Mv/killuva.jpg" alt="" width="10%"></a>
   </nav>
 <!-- Mobile Slide Menu -->
 <div class="mobile-menu" id="mobileMenu">
@@ -82,11 +82,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <div class="hero-buttons">
 
-<a href="./upload-image-home.html">
+<a href="./user-upload-image.html">
 <button class="btn-green">Report Injured Animal</button>
 </a>
 
-<a href="./Home-Pet-Adoption.html">
+<a href="./user-adoption.html">
 <button class="btn-orange">Adopt a Pet</button>
 </a>
 
@@ -119,7 +119,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <li>Rescue team notified instantly</li>
 </ul>
 
-<a href="./upload-image-home.html">
+<a href="./user-upload-image.html">
 <button class="btn-green">Report Animal</button>
 </a>
 
@@ -144,7 +144,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <li>Recovery monitoring</li>
 </ul>
 
-<a href="./medical-care-homepage.html">
+<a href="./user-medical-care-homepage.html">
 <button class="btn-green">View Medical Help</button>
 </a>
 
@@ -169,7 +169,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <li>Protection until adoption</li>
 </ul>
 
-<a href="./safe-shelter-home.html">
+<a href="./user-safe-shelter.html">
 <button class="btn-green">View Shelters</button>
 </a>
 
@@ -194,7 +194,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <li>Meet & adopt</li>
 </ul>
 
-<a href="./Home-Pet-Adoption.html">
+<a href="./User-PET-Adoption.html">
 <button class="btn-green">Adopt Now</button>
 </a>
 
@@ -440,6 +440,29 @@ street animals in nearby communities.
 
 
 <script src="./nav-bar.js"></script>
+<script>
+
+const faq = document.querySelectorAll(".faq-question");
+
+faq.forEach(question => {
+  question.addEventListener("click", () => {
+
+    const answer = question.nextElementSibling;
+    const icon = question.querySelector(".icon");
+
+    if(answer.style.maxHeight){
+      answer.style.maxHeight = null;
+      icon.textContent = "+";
+    }
+    else{
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      icon.textContent = "-";
+    }
+
+  });
+});
+
+</script>
 
 </body>
 </html>
